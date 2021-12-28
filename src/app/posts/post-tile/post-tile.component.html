@@ -1,0 +1,15 @@
+<mat-card class="m-3">
+    <mat-card-title>{{ post.title }}</mat-card-title>
+    <mat-card-content>
+        <p>{{ post.content }}</p>
+    </mat-card-content>
+    <mat-card-footer class="p-3 text-right">
+        <button
+            mat-raised-button
+            *ngFor="let tag of post.tags"
+            class="ml-2 text-white bg-dark"
+        >
+            {{ tag }}
+        </button>
+    </mat-card-footer>
+</mat-card>

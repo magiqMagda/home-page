@@ -1,1 +1,18 @@
 /* You can add global styles to this file, and also import other style files */
+@use '@angular/material' as mat;
+
+html,
+body {
+    height: 100%;
+}
+body {
+    background-color: blanchedalmond;
+    margin: 0;
+    font-family: Lora, sans-serif;
+}
+
+$my-custom-typography: mat.define-typography-config(
+    $font-family: Lora,
+);
+
+@include mat.core($my-custom-typography);
